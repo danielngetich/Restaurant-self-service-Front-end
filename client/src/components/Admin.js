@@ -11,7 +11,7 @@ function Admin() {
       username: username,
       password: password,
     };
-    fetch("/admins", {
+    fetch("admins/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

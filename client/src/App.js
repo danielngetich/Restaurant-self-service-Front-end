@@ -10,26 +10,17 @@ import React, { useEffect, useState } from "react";
 import CustomerMenu from "./components/CustomerMenu";
 import TableNum from "./components/TableNum";
 function App() {
-  const [user, setUser] = useState(null);
-  // useEffect(() => {
-  //   // auto-login
-  //   fetch("/me").then((r) => {
-  //     if (r.ok) {
-  //       r.json().then((user) => setUser(user));
-  //     }
-  //   });
-  // }, []);
-
-  // if (!user) return <Login onLogin={setUser} />;
   const [menu, setMenu] = useState([]);
 
   useEffect(() => {
-    fetch("/menus")
+    fetch("menus/")
       .then((res) => res.json())
       .then((data) => setMenu(data));
   }, []);
   return (
     <div className="App">
+      <h1>WELCOME TO FOODIES RESTAURANT</h1>
+      <h2>The Home of Kenyan Delicacies</h2>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
