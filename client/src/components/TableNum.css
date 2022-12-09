@@ -1,0 +1,11 @@
+.btn{
+    margin: 7%;
+    color: whitesmoke;
+    height: 60px;
+    width: 150px;
+    background-color: rgb(0, 128, 32);
+    position: relative;
+}
+#tbl{
+    color: purple;
+}

@@ -1,0 +1,60 @@
+.card{
+  border: solid white;
+  height: 50vh;
+  width: 18vw;
+  margin: 3%;
+  font-family: 'Inter';
+  font-style: normal;
+  text-align: center;
+  border-radius: 5%;
+  box-shadow: grey 2px 2px 0 0;
+  background-color: rgb(231, 231, 147);
+}
+img{
+  height: 22vh;
+  width: 17vw;
+  border-radius: 10px;
+}
+p{
+  color: green;
+}
+h5{
+  color: red;
+}
+#name{
+color: black;
+}
+#btnf{
+  background-color: green;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 2px;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+}
